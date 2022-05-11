@@ -13,12 +13,12 @@ class WeatherViewController: UIViewController {
         return label
     }()
     
-    private let exitButton: UIButton = {
+    private lazy var exitButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .red
         button.backgroundColor = .white
-        button.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
+        button.setImage(Images.presentCityListButtonTitleImage.titleImage, for: .normal)
         button.tintColor = .black
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(presentCityList), for: .touchUpInside)
@@ -29,7 +29,7 @@ class WeatherViewController: UIViewController {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.isUserInteractionEnabled = true
-        imageView.image = UIImage(named: "backgroundImage")
+        imageView.image = Images.weatherViewControllerTitleImage.titleImage
         return imageView
     }()
     

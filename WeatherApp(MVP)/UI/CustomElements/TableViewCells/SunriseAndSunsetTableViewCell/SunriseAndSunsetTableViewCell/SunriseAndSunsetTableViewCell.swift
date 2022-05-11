@@ -27,7 +27,7 @@ class SunriseAndSunsetTableViewCell: UITableViewCell {
     private let sunsetImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "sunset")
+        imageView.image = Images.sunsetImage.titleImage
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
@@ -36,7 +36,7 @@ class SunriseAndSunsetTableViewCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "sunrise")
+        imageView.image = Images.sunriseImage.titleImage
         return imageView
     }()
     

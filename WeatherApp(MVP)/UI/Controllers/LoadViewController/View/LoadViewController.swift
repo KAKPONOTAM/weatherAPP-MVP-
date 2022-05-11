@@ -55,8 +55,8 @@ extension LoadViewController: LoadViewDelegate {
     }
     
     func failure(error: Error) {
-        let alert = UIAlertController(title: "Error", message: "Error: \(error.localizedDescription)", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let alert = UIAlertController(title: AlertTitles.error.title, message: "\(AlertTitles.error.title): \(error.localizedDescription)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: AlertTitles.Ok.title, style: .default, handler: nil)
         
         alert.addAction(okAction)
         
